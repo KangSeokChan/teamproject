@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madforumapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewQuestion" android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".Edit_Reply" />
+        <!--
+         <activity
+            android:name=".UserActivitydashbord"
+            android:label="@string/title_activity_user_activitydashbord"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity android:name=".ReplyDashbord" />
+        <!--
+ <activity
+            android:name=".showReply"
+            android:label="@string/title_activity_show_reply"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity android:name=".MainFeed" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".UserActivitydashbord" />
+        <activity android:name=".showReply" />
+        <activity android:name=".forgotpassword2" />
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".signup" />
+        <activity android:name=".act2" />
+        <activity android:name=".personalprofile" />
+        <activity android:name=".FeedBack" />
+        <activity android:name=".FeedBack2" />
+        <activity android:name=".FeedBack3" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".ContactUs2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

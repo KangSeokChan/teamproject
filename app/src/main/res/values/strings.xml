@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">MadForumApp</string>
+    <string name="logoTitle">qExpert</string>
+
+
+    <string name="titile1">What is <i>qExpert</i> ?</string>
+    <string name="specialWord1">qExpert ?</string>
+    <string name="description1">For some <i>qExpert</i> is a place where they share their knowledge and for some it\'s a place to clear their doubts and gain knowledge.</string>
+
+    <string name="titile2">Can anyone ask <i>QUESTIONS</i> ?</string>
+    <string name="description2">Yes, all the registered users can ask and answer questions. Most importantly everything is \n <span><i>FREE</i></span></string>
+
+    <string name="titile3">Are you ready to <b>START</b> ?</string>
+    <string name="specialWord3">Start</string>
+    <string name="description3">You have a question? go ahead and sign in to get started.</string>
+
+    <!-- Button Labels -->
+    <string name="backButton">Back</string>
+    <string name="nextButton">Next</string>
+    <string name="signInButton">Sign In</string>
+
+
+    <!-- image descriptions -->
+    <string name="profilePicDescription">This is the profile picture</string>
+
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+
+    <!-- navigation text -->
+    <string name="nav_home">Home</string>
+    <string name="nav_question">Ask</string>
+    <string name="nav_contact">Contact Us</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- page headings -->
+    <string name="home_heading">Latest Questions</string>
+    <string name="ask_heading">Ask Questions</string>
+    <string name="settings_heading">Settings</string>
+
+    <!-- ask page labels -->
+    <string name="ask_title">Title</string>
+    <string name="ask_description">Description</string>
+    <string name="ask_description_hint">Describe your question as clearly as possible</string>
+    <string name="ask_post_button">Post</string>
+
+
+    <!-- vidula strings-->
+
+    <string name="user_name">Username</string>
+    <string name="user_password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="create">No account yet? Create one</string>
+    <string name="reset">Reset Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="self_register">Register Yourself !</string>
+    <string name="secure">100% secure</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="email_enter">Enter Email</string>
+    <string name="password_enter">Enter Password</string>
+    <string name="phone_num">Enter phone Number</string>
+    <string name="already_user">Already an user? Click to sign In</string>
+    <string name="conditions">Agree to terms and conditions</string>
+    <string name="prsnl_prof">Personal Profile</string>
+    <string name="nam">Name</string>
+    <string name="email">Email</string>
+    <string name="show_feedback">Show My Feedback</string>
+    <string name="proceed_feedback">Proceed to Dashboard</string>
+    <string name="editdetails_btn">Update</string>
+    <string name="deleteAcc_btn">Delete Account</string>
+    <string name="signout_btn">Sign Out</string>
+    <string name="reply_to">Reply to</string>
+    <string name="reply_user">\@Sansa</string>
+    <string name="reply_contain">Reply Reply ReplyReplyReplyReplyReplyReplyReplyReplyReplyReply</string>
+    <string name="date_reply">Sep 23</string>
+    <string name="delete_reply">Delete</string>
+    <string name="edit_reply">Edit</string>
+    <string name="add_newpost">What\'s on your mind?</string>
+    <string name="update_post">Update</string>
+    <string name="edit_reply_headline">Edit Reply</string>
+    <string name="title_activity_user_dashbord">UserDashbordActivity</string>
+    <string name="reply_hint">Add an answer</string>
+    <string name="add_reply">Add</string>
+    <string name="change_reply">Update</string>
+
+
+</resources>
