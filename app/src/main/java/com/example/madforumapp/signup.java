@@ -183,7 +183,7 @@ public class signup extends AppCompatActivity {
             return false;
         }
 
-        if(phon.length()!= 10)
+        if(phon.length()!= 11)
         {
             phone.setError("Enter a valid phone number");
             phone.requestFocus();
