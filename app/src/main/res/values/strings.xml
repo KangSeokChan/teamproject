@@ -47,21 +47,21 @@
     <!-- vidula strings-->
 
     <string name="user_name">Username</string>
-    <string name="user_password">Password</string>
-    <string name="forgot_password">Forgot Password ?</string>
-    <string name="create">No account yet? Create one</string>
+    <string name="user_password">" "비밀번호</string>
+    <string name="forgot_password">비밀번호 찾기</string>
+    <string name="create">계정이 없으신가요?</string>
     <string name="reset">Reset Password</string>
     <string name="conf_password">Confirm Password</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="enter_email">Enter Your Email</string>
-    <string name="self_register">Register Yourself !</string>
+    <string name="self_register">회원 가입</string>
     <string name="secure">100% secure</string>
-    <string name="enter_name">Enter Name</string>
-    <string name="email_enter">Enter Email</string>
-    <string name="password_enter">Enter Password</string>
-    <string name="phone_num">Enter phone Number</string>
-    <string name="already_user">Already an user? Click to sign In</string>
-    <string name="conditions">Agree to terms and conditions</string>
+    <string name="enter_name">" "이름</string>
+    <string name="email_enter">" "이메일</string>
+    <string name="password_enter">" "비밀번호</string>
+    <string name="phone_num">" "연락처</string>
+    <string name="already_user">이미 회원이신가요?</string>
+    <string name="conditions">이용약관에 동의</string>
     <string name="prsnl_prof">Personal Profile</string>
     <string name="nam">Name</string>
     <string name="email">Email</string>
