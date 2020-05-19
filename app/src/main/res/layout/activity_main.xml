@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|center"
-            android:background="@drawable/custom_login_button"
+            android:background="@android:color/transparent"
             android:text="@string/signInButton"
             android:textColor="#EFEFEFEF"
             android:visibility="invisible" />
