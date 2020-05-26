@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_below="@+id/textView21"
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
@@ -62,7 +62,7 @@
     <TextView
         android:id="@+id/textView13"
         android:layout_below="@+id/textView2"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
@@ -72,11 +72,21 @@
     <TextView
         android:id="@+id/textView17"
         android:layout_below="@+id/textView13"
-        android:layout_width="83dp"
-        android:layout_height="27dp"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/user_password"
+        android:text="비밀번호"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView17"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="전화번호"
         android:textSize="18sp" />
 
     <Button
@@ -106,21 +116,21 @@
 
     <ImageView
         android:id="@+id/clickfeedback"
+        android:layout_below="@+id/textView24"
         android:layout_width="72dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
         app:srcCompat="@mipmap/ic_feed" />
 
     <TextView
         android:id="@+id/clickfeedback2"
         android:layout_toEndOf="@+id/clickfeedback"
+        android:layout_below="@+id/textView24"
         android:layout_width="140dp"
         android:layout_height="27dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="515dp"
+        android:layout_marginTop="35dp"
         android:clickable="true"
         android:text="@string/show_feedback"
         android:textColor="#383535"
@@ -133,8 +143,6 @@
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:clickable="true"
         app:srcCompat="@mipmap/ic_dashboard" />
 
@@ -152,57 +160,33 @@
         android:textSize="14sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="0dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Phone"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.228" />
 
     <EditText
         android:id="@+id/etprofName"
-        android:layout_width="0dp"
+        android:layout_below="@+id/textView21"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_width="300dp"
         android:layout_height="37dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/etprofEmail"
-        android:layout_width="0dp"
+        android:layout_below="@+id/etprofName"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_width="300dp"
         android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
         android:clickable="false"
         android:editable="false"
         android:ems="10"
         android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/etprofPhone"
