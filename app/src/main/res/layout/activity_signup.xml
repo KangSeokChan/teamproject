@@ -82,14 +82,29 @@
         android:drawableLeft="@drawable/ic_action_name2"
         android:ems="10"
         android:hint="@string/password_enter"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/tertiary_text_light" />
+
+    <EditText
+        android:id="@+id/passwordchecktxt"
+        android:layout_below="@+id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/com_facebook_auth_dialog_cancel_background"
+        android:drawableLeft="@drawable/ic_action_name2"
+        android:ems="10"
+        android:hint="@string/passwordcheck_enter"
+        android:inputType="textPassword"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/tertiary_text_light" />
 
     <EditText
         android:id="@+id/etphone"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/passwordtxt"
+        android:layout_below="@+id/passwordchecktxt"
         android:layout_width="245dp"
         android:layout_height="39dp"
         android:layout_marginTop="30dp"

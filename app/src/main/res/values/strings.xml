@@ -59,6 +59,7 @@
     <string name="enter_name">" "이름</string>
     <string name="email_enter">" "이메일</string>
     <string name="password_enter">" "비밀번호</string>
+    <string name="passwordcheck_enter">" "비밀번호 확인</string>
     <string name="phone_num">" "연락처</string>
     <string name="already_user">이미 회원이신가요?</string>
     <string name="conditions">이용약관에 동의</string>

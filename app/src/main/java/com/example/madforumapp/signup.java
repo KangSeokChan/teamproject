@@ -29,7 +29,7 @@ public class signup extends AppCompatActivity {
 
     private CheckBox check;
 
-    private EditText name,email,password,phone;
+    private EditText name,email,password,passwordcheck,phone;
 
     private FirebaseAuth firebaseAuth;
 
@@ -110,6 +110,7 @@ public class signup extends AppCompatActivity {
         name=findViewById(R.id.nametxt);
         email=findViewById(R.id.emailtxt);
         password=findViewById(R.id.passwordtxt);
+        passwordcheck=findViewById(R.id.passwordchecktxt);
         phone=findViewById(R.id.etphone);
 
         register=findViewById(R.id.signupbtn);
@@ -144,9 +145,10 @@ public class signup extends AppCompatActivity {
         String nam=name.getText().toString();
         String ema=email.getText().toString();
         String pass=password.getText().toString();
+        String Cpass=passwordcheck.getText().toString();
         String phon=phone.getText().toString();
 
-        if(nam.isEmpty() || ema.isEmpty() || pass.isEmpty() || phon.isEmpty())
+        if(nam.isEmpty() || ema.isEmpty() || pass.isEmpty() || Cpass.isEmpty() || phon.isEmpty())
         {
             Context context=getApplicationContext();
             LayoutInflater inflater=getLayoutInflater();
@@ -157,7 +159,13 @@ public class signup extends AppCompatActivity {
             customToast.setDuration(Toast.LENGTH_LONG);
             customToast.show();
 
-        }else{
+        }
+        else if (!pass.equals(Cpass)){
+           passwordcheck.setError("비밀번호가 일치하지 않습니다.");
+           passwordcheck.requestFocus();
+           return false;
+        }
+        else{
 
             result=true;
         }
@@ -176,20 +184,20 @@ public class signup extends AppCompatActivity {
 
         if(pass.length()<6)
         {
-            password.setError("Password should be at least 6 characters long");
+            password.setError("비밀번호 길이는 최소 6자 이상입니다.");
             password.requestFocus();
             return false;
         }
 
         if(phon.length()!= 11)
         {
-            phone.setError("Enter a valid phone number");
+            phone.setError("유효한 연락처를 입력하세요");
             phone.requestFocus();
             return false;
         }
         if(check.isChecked()==false)
         {
-            check.setError("Please click confirmation");
+            check.setError("약관에 동의해주세요");
             check.requestFocus();
             return false;
         }else{

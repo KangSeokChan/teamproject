@@ -44,7 +44,7 @@
         android:drawableLeft="@drawable/ic_action_name2"
         android:ems="10"
         android:hint="@string/user_password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:textColor="@android:color/background_light" />
 
     <ImageButton
