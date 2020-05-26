@@ -33,7 +33,7 @@
         android:id="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:layout_width="309dp"
         android:layout_height="48dp"
         android:text="@string/self_register"
@@ -145,7 +145,7 @@
         android:layout_below="@+id/signupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:clickable="true"
         android:text="@string/already_user"
         android:textColor="@android:color/background_light" />

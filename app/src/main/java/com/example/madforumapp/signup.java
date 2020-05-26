@@ -182,14 +182,14 @@ public class signup extends AppCompatActivity {
         String pass=password.getText().toString();
         String phon=phone.getText().toString();
 
-        if(pass.length()<6)
+        if(pass.length() > 0 && pass.length() < 6)
         {
             password.setError("비밀번호 길이는 최소 6자 이상입니다.");
             password.requestFocus();
             return false;
         }
 
-        if(phon.length()!= 11)
+        if(phon.length() > 0 && phon.length() < 10)
         {
             phone.setError("유효한 연락처를 입력하세요");
             phone.requestFocus();
