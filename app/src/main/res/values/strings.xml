@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">MadForumApp</string>
+    <string name="app_name">모야모</string>
     <string name="logoTitle">qExpert</string>
 
 
-    <string name="titile1">첫 화면</string>
+    <string name="titile1">모야모</string>
     <string name="specialWord1">뭠마??뭠마 멈맘멈마?</string>
-    <string name="description1">For some <i>qExpert</i> is a place where they share their knowledge and for some it\'s a place to clear their doubts and gain knowledge.</string>
+    <string name="description1">안녕하세요.</string>
 
-    <string name="titile2">Can anyone ask <i>QUESTIONS</i> ?</string>
-    <string name="description2">Yes, all the registered users can ask and answer questions. Most importantly everything is \n <span><i>FREE</i></span></string>
+    <string name="titile2"> </string>
+    <string name="description2">이 어플은 시간과 장소에 구애받지 않고 누구나 편안하게 질문하고 답변할 수 있는 분위기를 조성하기 위해 만들어졌습니다.</string>
 
-    <string name="titile3">시작 준비 준비</string>
+    <string name="titile3"> </string>
     <string name="specialWord3">Start</string>
-    <string name="description3">You have a question? go ahead and sign in to get started.</string>
+    <string name="description3">시작합니다.</string>
 
     <!-- Button Labels -->
     <string name="backButton">Back</string>
@@ -46,14 +46,14 @@
 
     <!-- vidula strings-->
 
-    <string name="user_name">Username</string>
+    <string name="user_name">username</string>
     <string name="user_password">" "비밀번호</string>
     <string name="forgot_password">비밀번호 찾기</string>
     <string name="create">계정이 없으신가요?</string>
     <string name="reset">Reset Password</string>
     <string name="conf_password">Confirm Password</string>
-    <string name="forgot_your_password">Forgot your password?</string>
-    <string name="enter_email">Enter Your Email</string>
+    <string name="forgot_your_password">비밀번호 찾기</string>
+    <string name="enter_email">Email을 입력하세요</string>
     <string name="self_register">회원 가입</string>
     <string name="secure">100% secure</string>
     <string name="enter_name">" "이름</string>
@@ -69,8 +69,8 @@
     <string name="show_feedback">Show My Feedback</string>
     <string name="proceed_feedback">Proceed to Dashboard</string>
     <string name="editdetails_btn">Update</string>
-    <string name="deleteAcc_btn">Delete Account</string>
-    <string name="signout_btn">Sign Out</string>
+    <string name="deleteAcc_btn">회원 탈퇴</string>
+    <string name="signout_btn">로그아웃</string>
     <string name="reply_to">Reply to</string>
     <string name="reply_user">\@Sansa</string>
     <string name="reply_contain">Reply Reply ReplyReplyReplyReplyReplyReplyReplyReplyReplyReply</string>
