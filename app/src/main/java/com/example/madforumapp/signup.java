@@ -33,7 +33,6 @@ public class signup extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +41,6 @@ public class signup extends AppCompatActivity {
         setupUIViews();
 
         firebaseAuth = FirebaseAuth.getInstance();
-
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
