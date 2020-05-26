@@ -220,11 +220,11 @@ public class signup extends AppCompatActivity {
 
                     if(task.isSuccessful())
                     {
-                        Toast.makeText(signup.this,"Successfully registered,Verification email sent",Toast.LENGTH_LONG).show();
+                        Toast.makeText(signup.this,"회원가입 성공! 이메일을 확인해주세요. ",Toast.LENGTH_LONG).show();
                         firebaseAuth.signOut();
                         startActivity(new Intent(signup.this,act2.class));
                     }else{
-                        Toast.makeText(signup.this,"Verification email hasnt been sent",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(signup.this,"가입 확인 이메일이 전송되지 않았습니다.ㅜ",Toast.LENGTH_SHORT).show();
                     }
                 }
             });
