@@ -129,7 +129,6 @@
 
     <Button
         android:id="@+id/btnsignout"
-        android:
         android:layout_width="200dp"
         android:layout_height="33dp"
         android:layout_marginStart="100dp"
