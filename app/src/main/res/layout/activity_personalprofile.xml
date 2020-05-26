@@ -27,6 +27,7 @@
 
     <TextView
         android:id="@+id/textView21"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/view6"
         android:layout_width="100dp"
         android:layout_height="37dp"
@@ -35,6 +36,18 @@
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnsignout"
+        android:layout_below="@+id/view6"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_login_button1"
+        android:text="@string/signout_btn"
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/textView2"
@@ -69,14 +82,27 @@
     <Button
         android:id="@+id/btnEditinfo"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:background="#000000"
         android:text="@string/editdetails_btn"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDeleteAcc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000"
+        android:text="@string/deleteAcc_btn"
+        android:textColor="#FFFFFF" />
 
     <ImageView
         android:id="@+id/clickfeedback"
@@ -125,37 +151,6 @@
         android:textColor="#383535"
         android:textSize="14sp"
         android:textStyle="bold" />
-
-
-    <Button
-        android:id="@+id/btnsignout"
-        android:layout_width="200dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/custom_login_button1"
-        android:text="@string/signout_btn"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/btnDeleteAcc"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="#582117"
-        android:text="@string/deleteAcc_btn"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.966"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
 
     <TextView
         android:id="@+id/textView24"
