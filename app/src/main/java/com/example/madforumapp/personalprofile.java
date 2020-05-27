@@ -155,9 +155,9 @@ public class personalprofile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder dialog=new AlertDialog.Builder(personalprofile.this);
-                dialog.setTitle("Do you want to delete Account?");
-                dialog.setMessage("Deleting this account will result in completely removing your account and you cannot login again");
-                dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                dialog.setTitle("회원 탈퇴를 진행하시겠습니까?");
+                dialog.setMessage("진행 시 계정이 완전히 삭제되며 다시 로그인 하기 위해서는 새로운 계정을 만들어야 합니다");
+                dialog.setPositiveButton("삭제", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -186,7 +186,7 @@ public class personalprofile extends AppCompatActivity {
                                         }
                                     });
 
-                                    Toast.makeText(personalprofile.this,"Account Deleted",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(personalprofile.this,"계정 삭제 완료",Toast.LENGTH_LONG).show();
 
                                     Intent intent=new Intent(personalprofile.this,act2.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -200,7 +200,7 @@ public class personalprofile extends AppCompatActivity {
 
                     }
                 });
-                dialog.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                dialog.setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 

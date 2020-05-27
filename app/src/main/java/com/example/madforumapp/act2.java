@@ -46,7 +46,7 @@ public class act2 extends AppCompatActivity {
 
         btnLogin = findViewById(R.id.btnLogin);
 
-        info.setText("Login Attempts remaining: 5");
+        info.setText("남은 로그인 시도 횟수: 5");
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -62,7 +62,7 @@ public class act2 extends AppCompatActivity {
 
     public void validate(String userName,String userPassword)
     {
-        progressDialog.setMessage("Your Account has been successfully Verified through Email");
+        progressDialog.setMessage("로딩 중");
         progressDialog.show();
         if(validate()) {
 
@@ -80,7 +80,7 @@ public class act2 extends AppCompatActivity {
                         Toast.makeText(act2.this, "Login Failed", Toast.LENGTH_SHORT).show();
                         counter--;
 
-                        info.setText("Login Attempts remaining:" + String.valueOf(counter));
+                        info.setText("남은 로그인 시도 횟수:" + String.valueOf(counter));
 
                         if (counter == 0) {
                             btnLogin.setEnabled(false);
@@ -182,10 +182,10 @@ public class act2 extends AppCompatActivity {
         if(email)
         {
             finish();
-            Toast.makeText(act2.this, "Login Successful", Toast.LENGTH_SHORT).show();
+            Toast.makeText(act2.this, "로그인 성공!", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(act2.this,MainFeed.class));
         }else{
-            Toast.makeText(act2.this,"Please verify by clicking link sent to your mail",Toast.LENGTH_LONG).show();
+            Toast.makeText(act2.this,"인증메일을 확인해 주세요",Toast.LENGTH_LONG).show();
             firebaseAuth.signOut();
         }
     }
