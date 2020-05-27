@@ -71,17 +71,17 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_below="@+id/textView13"
-        android:layout_width="70dp"
+        android:layout_below="@+id/textView24"
+        android:layout_width="110dp"
         android:layout_height="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="비밀번호"
+        android:text="비밀번호 변경"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_below="@+id/textView17"
+        android:layout_below="@+id/textView13"
         android:layout_width="70dp"
         android:layout_height="25dp"
         android:layout_marginStart="20dp"
@@ -116,7 +116,7 @@
 
     <ImageView
         android:id="@+id/clickfeedback"
-        android:layout_below="@+id/textView24"
+        android:layout_below="@+id/textView17"
         android:layout_width="72dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
@@ -126,7 +126,7 @@
     <TextView
         android:id="@+id/clickfeedback2"
         android:layout_toEndOf="@+id/clickfeedback"
-        android:layout_below="@+id/textView24"
+        android:layout_below="@+id/textView17"
         android:layout_width="140dp"
         android:layout_height="27dp"
         android:layout_marginStart="30dp"
@@ -163,11 +163,10 @@
 
     <EditText
         android:id="@+id/etprofName"
-        android:layout_below="@+id/textView21"
         android:layout_toEndOf="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView2"
         android:layout_width="300dp"
         android:layout_height="37dp"
-        android:layout_marginTop="50dp"
         android:layout_marginStart="10dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -175,8 +174,8 @@
 
     <EditText
         android:id="@+id/etprofEmail"
-        android:layout_below="@+id/etprofName"
         android:layout_toEndOf="@+id/textView13"
+        android:layout_alignBaseline="@+id/textView13"
         android:layout_width="300dp"
         android:layout_height="37dp"
         android:layout_marginStart="10dp"
@@ -190,40 +189,27 @@
 
     <EditText
         android:id="@+id/etprofPhone"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_toEndOf="@+id/textView24"
+        android:layout_alignBaseline="@+id/textView24"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/btnprofchangepass"
-        android:layout_width="0dp"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_width="100dp"
         android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
         android:background="#A87452"
         android:fadingEdge="horizontal"
-        android:text="Change Password"
+        android:text="비밀번호 재설정"
         android:textColor="#F5F2F2"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
+        android:textStyle="bold" />
 
 </RelativeLayout>
