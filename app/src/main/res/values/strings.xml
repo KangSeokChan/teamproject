@@ -23,25 +23,25 @@
     <!-- image descriptions -->
     <string name="profilePicDescription">This is the profile picture</string>
 
-    <string name="profile">Profile</string>
+    <string name="profile">내 정보</string>
     <string name="search">Search</string>
 
     <!-- navigation text -->
-    <string name="nav_home">Home</string>
-    <string name="nav_question">Ask</string>
-    <string name="nav_contact">Contact Us</string>
+    <string name="nav_home">메인화면</string>
+    <string name="nav_question">질문하기</string>
+    <string name="nav_contact">연락</string>
     <string name="nav_settings">Settings</string>
 
     <!-- page headings -->
     <string name="home_heading">Latest Questions</string>
-    <string name="ask_heading">Ask Questions</string>
+    <string name="ask_heading">질문 등록</string>
     <string name="settings_heading">Settings</string>
 
     <!-- ask page labels -->
-    <string name="ask_title">Title</string>
-    <string name="ask_description">Description</string>
-    <string name="ask_description_hint">Describe your question as clearly as possible</string>
-    <string name="ask_post_button">Post</string>
+    <string name="ask_title">제목</string>
+    <string name="ask_description">내용</string>
+    <string name="ask_description_hint">내용을 입력하세요</string>
+    <string name="ask_post_button">등록</string>
 
 
     <!-- vidula strings-->
@@ -81,9 +81,9 @@
     <string name="update_post">Update</string>
     <string name="edit_reply_headline">Edit Reply</string>
     <string name="title_activity_user_dashbord">UserDashbordActivity</string>
-    <string name="reply_hint">Add an answer</string>
-    <string name="add_reply">Add</string>
-    <string name="change_reply">Update</string>
+    <string name="reply_hint">답변 입력</string>
+    <string name="add_reply">등록</string>
+    <string name="change_reply">수정</string>
 
 
 </resources>
