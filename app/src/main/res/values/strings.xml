@@ -66,8 +66,8 @@
     <string name="prsnl_prof">내 정보</string>
     <string name="nam">이름</string>
     <string name="email">이메일</string>
-    <string name="show_feedback">Show My Feedback</string>
-    <string name="proceed_feedback">Proceed to Dashboard</string>
+    <string name="show_feedback">내 피드백 보기</string>
+    <string name="proceed_feedback">대쉬보드 가기</string>
     <string name="editdetails_btn">회원정보 수정</string>
     <string name="deleteAcc_btn">회원 탈퇴</string>
     <string name="signout_btn">로그아웃</string>

@@ -14,7 +14,7 @@
         android:layout_width="500dp"
         android:layout_height="152dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/coverimageofuser" />
+        android:background="@color/profile_background" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -69,7 +69,7 @@
         android:text="@string/email"
         android:textSize="18sp" />
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView17"
         android:layout_below="@+id/textView24"
         android:layout_width="110dp"
@@ -78,7 +78,7 @@
         android:layout_marginTop="20dp"
         android:text="비밀번호 변경"
         android:textSize="18sp" />
-
+-->
     <TextView
         android:id="@+id/textView24"
         android:layout_below="@+id/textView13"
@@ -116,7 +116,7 @@
 
     <ImageView
         android:id="@+id/clickfeedback"
-        android:layout_below="@+id/textView17"
+        android:layout_below="@+id/textView24"
         android:layout_width="72dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
@@ -126,11 +126,11 @@
     <TextView
         android:id="@+id/clickfeedback2"
         android:layout_toEndOf="@+id/clickfeedback"
-        android:layout_below="@+id/textView17"
+        android:layout_alignTop="@+id/clickfeedback"
         android:layout_width="140dp"
         android:layout_height="27dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:clickable="true"
         android:text="@string/show_feedback"
         android:textColor="#383535"
@@ -149,11 +149,11 @@
     <TextView
         android:id="@+id/rtrdashboard2"
         android:layout_toEndOf="@+id/rtrdashboard"
-        android:layout_below="@+id/clickfeedback"
+        android:layout_alignTop="@+id/rtrdashboard"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:clickable="true"
         android:text="@string/proceed_feedback"
         android:textColor="#383535"
@@ -201,11 +201,11 @@
 
     <Button
         android:id="@+id/btnprofchangepass"
-        android:layout_toEndOf="@+id/textView17"
-        android:layout_alignTop="@+id/textView17"
+        android:layout_below="@+id/rtrdashboard"
         android:layout_width="100dp"
         android:layout_height="38dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:background="#A87452"
         android:fadingEdge="horizontal"
         android:text="비밀번호 재설정"

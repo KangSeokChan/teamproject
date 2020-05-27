@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#EF0A7D</color>
     <color name="colorSignup">#CECEF6</color>
+    <color name="profile_background">#49BDDA</color>
+
+
 </resources>
