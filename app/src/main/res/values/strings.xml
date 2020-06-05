@@ -33,7 +33,7 @@
     <string name="nav_settings">Settings</string>
 
     <!-- page headings -->
-    <string name="home_heading">Latest Questions</string>
+    <string name="home_heading">질문 목록</string>
     <string name="ask_heading">질문 등록</string>
     <string name="settings_heading">Settings</string>
 
