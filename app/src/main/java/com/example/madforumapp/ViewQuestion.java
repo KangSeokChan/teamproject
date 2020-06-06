@@ -137,7 +137,7 @@ public class ViewQuestion extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(replyText.getText().toString().isEmpty()){
-                    Toast.makeText(ViewQuestion.this, "Answer field cannot be left empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewQuestion.this, "내용을 입력해주세요!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -156,7 +156,7 @@ public class ViewQuestion extends AppCompatActivity {
                         Answer a = new Answer(num,  replyText.getText().toString(), currentUser.getEmail());
 
                         ref.setValue(a);
-                        Toast.makeText(ViewQuestion.this, "Posted Successfully!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ViewQuestion.this, "답변 등록 완료!", Toast.LENGTH_SHORT).show();
                         replyText.setText("");
                     }
 

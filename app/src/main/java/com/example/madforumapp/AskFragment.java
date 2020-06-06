@@ -54,12 +54,12 @@ public class AskFragment extends Fragment {
             public void onClick(View view) {
 
                 if(title.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity().getApplicationContext(), "Title field cannot be left empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "제목을 입력해주세요!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if(description.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity().getApplicationContext(), "Description field cannot be left empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "내용을 입력해주세요!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -79,7 +79,7 @@ public class AskFragment extends Fragment {
                         Question q = new Question((int)num, title.getText().toString(), currentUser.getEmail(), description.getText().toString());
 
                         ref.setValue(q);
-                        Toast.makeText(getActivity().getApplicationContext(), "Posted Successfully!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplicationContext(), "질문 등록 완료!", Toast.LENGTH_SHORT).show();
                         ((MainFeed)getActivity()).ChangeToHome();
                         title.setText("");
                         description.setText("");
