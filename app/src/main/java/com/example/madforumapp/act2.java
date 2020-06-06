@@ -183,10 +183,28 @@ public class act2 extends AppCompatActivity {
         {
             finish();
             Toast.makeText(act2.this, "로그인 성공!", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(act2.this,MainFeed.class));
+            Intent SignInintent = new Intent(act2.this,MainFeed.class);
+            SignInintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            SignInintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(SignInintent);
         }else{
             Toast.makeText(act2.this,"인증메일을 확인해 주세요",Toast.LENGTH_LONG).show();
             firebaseAuth.signOut();
+        }
+    }
+    private long backKeyPressedTime = 0;
+    private Toast toast;
+    @Override
+    public void onBackPressed() {
+        if (System.currentTimeMillis() > backKeyPressedTime + 2000) {
+            backKeyPressedTime = System.currentTimeMillis();
+            toast = Toast.makeText(this, "\'뒤로\' 버튼을 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
+            toast.show();
+            return;
+        }
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2000) {
+            finish();
+            toast.cancel();
         }
     }
 }
