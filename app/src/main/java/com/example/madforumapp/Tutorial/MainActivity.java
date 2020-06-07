@@ -1,4 +1,4 @@
-package com.example.madforumapp;
+package com.example.madforumapp.Tutorial;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -13,6 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.madforumapp.MainFeed;
+import com.example.madforumapp.R;
+import com.example.madforumapp.act2;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mMainPage;
     private LinearLayout mDotContainer;
-    private  SliderAdapter sliderAdapter;
+    private SliderAdapter sliderAdapter;
     private TextView[] mDots;
 
     private Button mNext;
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if(FirebaseAuth.getInstance().getCurrentUser() != null){
-            Intent mainFeed=new Intent(MainActivity.this,MainFeed.class);
+            Intent mainFeed=new Intent(MainActivity.this, MainFeed.class);
             mainFeed.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             mainFeed.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(mainFeed);
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         mSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginIntent=new Intent(MainActivity.this,act2.class);
+                Intent loginIntent=new Intent(MainActivity.this, act2.class);
                 loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(loginIntent);

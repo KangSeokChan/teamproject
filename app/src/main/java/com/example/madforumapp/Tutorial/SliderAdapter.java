@@ -1,4 +1,4 @@
-package com.example.madforumapp;
+package com.example.madforumapp.Tutorial;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.example.madforumapp.R;
 
 public class SliderAdapter extends PagerAdapter {
 

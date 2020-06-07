@@ -15,9 +15,9 @@
     <string name="description3">시작합니다.</string>
 
     <!-- Button Labels -->
-    <string name="backButton">BACK</string>
-    <string name="nextButton">NEXT</string>
-    <string name="skipButton">SKIP</string>
+    <string name="btn_back">BACK</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_skip">SKIP</string>
     <string name="signInButton">Sign In</string>
 
 
