@@ -1,17 +1,11 @@
 package com.example.madforumapp.Tutorial;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.provider.Settings;
-import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -27,9 +21,9 @@ public class SliderAdapter extends PagerAdapter {
     SliderAdapter(Context context){
         this.context = context;
 
-        slideHeadings[0] = new SpannableString(context.getString(R.string.titile1));
-        slideHeadings[1] = new SpannableString(context.getString(R.string.titile2));
-        slideHeadings[2] = new SpannableString(context.getString(R.string.titile3));
+        slideHeadings[0] = new SpannableString(context.getString(R.string.title1));
+        slideHeadings[1] = new SpannableString(context.getString(R.string.title2));
+        slideHeadings[2] = new SpannableString(context.getString(R.string.title3));
 
         slideDescription[0] =  context.getString(R.string.description1);
         slideDescription[1] =  context.getString(R.string.description2);
