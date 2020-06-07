@@ -19,6 +19,8 @@ import com.example.madforumapp.act2;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+
+    /*tutorial page 수 = 3*/
     final int numOfPages = 3;
 
     private ViewPager mMainPage;
