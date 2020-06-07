@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start|center"
             android:background="@android:color/transparent"
-            android:text="@string/backButton"
+            android:text="@string/btn_back"
             android:textColor="#FAFFFFFF"
             android:visibility="visible" />
 
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end|center"
             android:background="@android:color/transparent"
-            android:text="@string/nextButton"
+            android:text="@string/btn_next"
             android:textColor="#FFFFFF"
             android:visibility="visible" />
 
