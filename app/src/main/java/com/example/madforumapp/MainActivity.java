@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(FirebaseAuth.getInstance().getCurrentUser() != null){
             Intent mainFeed=new Intent(MainActivity.this,MainFeed.class);
+            mainFeed.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            mainFeed.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(mainFeed);
         }
 
@@ -81,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent loginIntent=new Intent(MainActivity.this,act2.class);
+                loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(loginIntent);
             }
         });
@@ -153,6 +158,22 @@ public class MainActivity extends AppCompatActivity {
         public void onPageScrollStateChanged(int state) {
 
         }
+
     };
 
+    private long backKeyPressedTime = 0;
+    private Toast toast;
+    @Override
+    public void onBackPressed() {
+        if (System.currentTimeMillis() > backKeyPressedTime + 2000) {
+            backKeyPressedTime = System.currentTimeMillis();
+            toast = Toast.makeText(this, "\'뒤로\' 버튼을 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
+            toast.show();
+            return;
+        }
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2000) {
+            finish();
+            toast.cancel();
+        }
+    }
 }

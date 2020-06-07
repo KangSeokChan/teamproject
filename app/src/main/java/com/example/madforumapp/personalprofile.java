@@ -299,12 +299,9 @@ public class personalprofile extends AppCompatActivity {
 
          FirebaseAuth.getInstance().signOut();
          Intent intent=new Intent(personalprofile.this,act2.class);
-
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-
             }
         });
 
