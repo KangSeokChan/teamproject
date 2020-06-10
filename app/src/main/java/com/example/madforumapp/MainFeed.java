@@ -1,18 +1,26 @@
 package com.example.madforumapp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
+import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainFeed extends AppCompatActivity {
 
@@ -28,10 +36,49 @@ public class MainFeed extends AppCompatActivity {
     private SettingsFragment settingsFragment;
     private FeedbackFragment feedbackFragment;
 
+    private DrawerLayout mDrawerLayout;
+    private NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_feed);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_edit);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                // 각 메뉴 클릭시 이뤄지는 이벤트
+                mDrawerLayout.closeDrawers();
+                switch (item.getItemId()){
+                    case R.id.Question:
+                        changeFragment(homeFragment);
+                        return true;
+
+                    case R.id.answer:
+                        changeFragment(askFragment);
+                        return true;
+
+                    case R.id.support:
+                        Intent contactUsIntent = new Intent(MainFeed.this, ContactUs.class);
+                        startActivity(contactUsIntent);
+                        return true;
+
+                    case R.id.logout:
+                        Intent i=new Intent(MainFeed.this,personalprofile.class);
+                        startActivity(i);
+                        return true;
+
+                }
+
+                return true;
+            }
+        });
 
         homeFragment = new HomeFragment();
         askFragment = new AskFragment();
@@ -78,6 +125,18 @@ public class MainFeed extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
